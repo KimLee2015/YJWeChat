@@ -7,21 +7,274 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A23E7A71E977D110029CFCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7A61E977D110029CFCA /* AppDelegate.swift */; };
-		2A23E7A91E977D110029CFCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7A81E977D110029CFCA /* ViewController.swift */; };
-		2A23E7AC1E977D110029CFCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7AA1E977D110029CFCA /* Main.storyboard */; };
-		2A23E7AE1E977D110029CFCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7AD1E977D110029CFCA /* Assets.xcassets */; };
-		2A23E7B11E977D110029CFCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7AF1E977D110029CFCA /* LaunchScreen.storyboard */; };
+		2A23E8531E977E310029CFCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7B91E977E310029CFCA /* AppDelegate.swift */; };
+		2A23E8541E977E310029CFCA /* TSChatBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7BD1E977E310029CFCA /* TSChatBaseCell.swift */; };
+		2A23E8551E977E310029CFCA /* TSChatCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7BE1E977E310029CFCA /* TSChatCellDelegate.swift */; };
+		2A23E8561E977E310029CFCA /* TSChatImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7BF1E977E310029CFCA /* TSChatImageCell.swift */; };
+		2A23E8571E977E310029CFCA /* TSChatImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7C01E977E310029CFCA /* TSChatImageCell.xib */; };
+		2A23E8581E977E310029CFCA /* TSChatSystemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7C11E977E310029CFCA /* TSChatSystemCell.swift */; };
+		2A23E8591E977E310029CFCA /* TSChatSystemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7C21E977E310029CFCA /* TSChatSystemCell.xib */; };
+		2A23E85A1E977E310029CFCA /* TSChatTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7C31E977E310029CFCA /* TSChatTextCell.swift */; };
+		2A23E85B1E977E310029CFCA /* TSChatTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7C41E977E310029CFCA /* TSChatTextCell.xib */; };
+		2A23E85C1E977E310029CFCA /* TSChatTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7C51E977E310029CFCA /* TSChatTimeCell.swift */; };
+		2A23E85D1E977E310029CFCA /* TSChatTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7C61E977E310029CFCA /* TSChatTimeCell.xib */; };
+		2A23E85E1E977E310029CFCA /* TSChatVoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7C71E977E310029CFCA /* TSChatVoiceCell.swift */; };
+		2A23E85F1E977E310029CFCA /* TSChatVoiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7C81E977E310029CFCA /* TSChatVoiceCell.xib */; };
+		2A23E8601E977E310029CFCA /* AudioDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7CA1E977E310029CFCA /* AudioDelegate.swift */; };
+		2A23E8611E977E310029CFCA /* AudioFilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7CB1E977E310029CFCA /* AudioFilesManager.swift */; };
+		2A23E8621E977E310029CFCA /* AudioPlayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7CC1E977E310029CFCA /* AudioPlayManager.swift */; };
+		2A23E8631E977E310029CFCA /* AudioRecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7CD1E977E310029CFCA /* AudioRecordManager.swift */; };
+		2A23E8641E977E310029CFCA /* ChatConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7CE1E977E310029CFCA /* ChatConfig.swift */; };
+		2A23E8651E977E310029CFCA /* ImageFilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7CF1E977E310029CFCA /* ImageFilesManager.swift */; };
+		2A23E8661E977E310029CFCA /* TSChatDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7D01E977E310029CFCA /* TSChatDataManager.swift */; };
+		2A23E8671E977E310029CFCA /* TSChatEmojiDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7D11E977E310029CFCA /* TSChatEmojiDictionary.swift */; };
+		2A23E8681E977E310029CFCA /* TSChatTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7D21E977E310029CFCA /* TSChatTextParser.swift */; };
+		2A23E8691E977E310029CFCA /* TSYYTextLinePositionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7D31E977E310029CFCA /* TSYYTextLinePositionModifier.swift */; };
+		2A23E86A1E977E310029CFCA /* UIScrollView+ChatAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7D41E977E310029CFCA /* UIScrollView+ChatAdditions.swift */; };
+		2A23E86B1E977E310029CFCA /* UITableView+ChatAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7D51E977E310029CFCA /* UITableView+ChatAdditions.swift */; };
+		2A23E86C1E977E310029CFCA /* TSChatViewController+ActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7D61E977E310029CFCA /* TSChatViewController+ActionBar.swift */; };
+		2A23E86D1E977E310029CFCA /* TSChatViewController+CellEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7D71E977E310029CFCA /* TSChatViewController+CellEnums.swift */; };
+		2A23E86E1E977E310029CFCA /* TSChatViewController+HandleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7D81E977E310029CFCA /* TSChatViewController+HandleData.swift */; };
+		2A23E86F1E977E310029CFCA /* TSChatViewController+Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7D91E977E310029CFCA /* TSChatViewController+Interaction.swift */; };
+		2A23E8701E977E310029CFCA /* TSChatViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7DA1E977E310029CFCA /* TSChatViewController+Keyboard.swift */; };
+		2A23E8711E977E310029CFCA /* TSChatViewController+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7DB1E977E310029CFCA /* TSChatViewController+Subviews.swift */; };
+		2A23E8721E977E310029CFCA /* TSChatViewController+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7DC1E977E310029CFCA /* TSChatViewController+TestData.swift */; };
+		2A23E8731E977E310029CFCA /* TSChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7DD1E977E310029CFCA /* TSChatViewController.swift */; };
+		2A23E8741E977E310029CFCA /* TSChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7DE1E977E310029CFCA /* TSChatViewController.xib */; };
+		2A23E8751E977E310029CFCA /* TSChatActionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7E01E977E310029CFCA /* TSChatActionBarView.swift */; };
+		2A23E8761E977E310029CFCA /* TSChatActionBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7E11E977E310029CFCA /* TSChatActionBarView.xib */; };
+		2A23E8771E977E310029CFCA /* TSChatButton+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7E21E977E310029CFCA /* TSChatButton+UI.swift */; };
+		2A23E8781E977E310029CFCA /* TSChatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7E31E977E310029CFCA /* TSChatButton.swift */; };
+		2A23E8791E977E310029CFCA /* TSChatEmotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7E41E977E310029CFCA /* TSChatEmotionCell.swift */; };
+		2A23E87A1E977E310029CFCA /* TSChatEmotionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7E51E977E310029CFCA /* TSChatEmotionCell.xib */; };
+		2A23E87B1E977E310029CFCA /* TSChatEmotionInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7E61E977E310029CFCA /* TSChatEmotionInputView.swift */; };
+		2A23E87C1E977E310029CFCA /* TSChatEmotionInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7E71E977E310029CFCA /* TSChatEmotionInputView.xib */; };
+		2A23E87D1E977E310029CFCA /* TSChatEmotionScollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7E81E977E310029CFCA /* TSChatEmotionScollView.swift */; };
+		2A23E87E1E977E310029CFCA /* TSChatShareMoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7E91E977E310029CFCA /* TSChatShareMoreCollectionViewCell.swift */; };
+		2A23E87F1E977E310029CFCA /* TSChatShareMoreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7EA1E977E310029CFCA /* TSChatShareMoreCollectionViewCell.xib */; };
+		2A23E8801E977E310029CFCA /* TSChatShareMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7EB1E977E310029CFCA /* TSChatShareMoreView.swift */; };
+		2A23E8811E977E310029CFCA /* TSChatShareMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7EC1E977E310029CFCA /* TSChatShareMoreView.xib */; };
+		2A23E8821E977E310029CFCA /* TSChatSystemEdgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7ED1E977E310029CFCA /* TSChatSystemEdgeLabel.swift */; };
+		2A23E8831E977E310029CFCA /* TSChatVoiceIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7EE1E977E310029CFCA /* TSChatVoiceIndicatorView.swift */; };
+		2A23E8841E977E310029CFCA /* TSChatVoiceIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7EF1E977E310029CFCA /* TSChatVoiceIndicatorView.xib */; };
+		2A23E8851E977E310029CFCA /* TSContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7F11E977E310029CFCA /* TSContactsViewController.swift */; };
+		2A23E8861E977E310029CFCA /* TSContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7F21E977E310029CFCA /* TSContactsViewController.xib */; };
+		2A23E8871E977E310029CFCA /* TSContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7F31E977E310029CFCA /* TSContactTableViewCell.swift */; };
+		2A23E8881E977E310029CFCA /* TSContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E7F41E977E310029CFCA /* TSContactTableViewCell.xib */; };
+		2A23E8891E977E310029CFCA /* HttpManager+UploadAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7F71E977E310029CFCA /* HttpManager+UploadAudio.swift */; };
+		2A23E88A1E977E310029CFCA /* HttpManager+UploadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7F81E977E310029CFCA /* HttpManager+UploadImage.swift */; };
+		2A23E88B1E977E310029CFCA /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7F91E977E310029CFCA /* HttpManager.swift */; };
+		2A23E88C1E977E310029CFCA /* TSResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7FA1E977E310029CFCA /* TSResponseSerializer.swift */; };
+		2A23E88D1E977E310029CFCA /* TSChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7FC1E977E310029CFCA /* TSChatModel.swift */; };
+		2A23E88E1E977E310029CFCA /* TSChatSubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7FD1E977E310029CFCA /* TSChatSubModel.swift */; };
+		2A23E88F1E977E310029CFCA /* TSContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7FE1E977E310029CFCA /* TSContactModel.swift */; };
+		2A23E8901E977E310029CFCA /* TSMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E7FF1E977E310029CFCA /* TSMessageModel.swift */; };
+		2A23E8911E977E310029CFCA /* TSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8001E977E310029CFCA /* TSModel.swift */; };
+		2A23E8921E977E310029CFCA /* TSModelTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8011E977E310029CFCA /* TSModelTransformer.swift */; };
+		2A23E8931E977E310029CFCA /* TSUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8021E977E310029CFCA /* TSUploadModel.swift */; };
+		2A23E8941E977E310029CFCA /* TSApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8031E977E310029CFCA /* TSApplicationManager.swift */; };
+		2A23E8951E977E310029CFCA /* TSLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8041E977E310029CFCA /* TSLocationManager.swift */; };
+		2A23E8961E977E310029CFCA /* TSUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8051E977E310029CFCA /* TSUserManager.swift */; };
+		2A23E8971E977E310029CFCA /* TSDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8071E977E310029CFCA /* TSDiscoverViewController.swift */; };
+		2A23E8981E977E310029CFCA /* TSDiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8081E977E310029CFCA /* TSDiscoverViewController.xib */; };
+		2A23E8991E977E310029CFCA /* TSImageTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8091E977E310029CFCA /* TSImageTextTableViewCell.swift */; };
+		2A23E89A1E977E310029CFCA /* TSImageTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E80A1E977E310029CFCA /* TSImageTextTableViewCell.xib */; };
+		2A23E89B1E977E310029CFCA /* TSMeAvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E80C1E977E310029CFCA /* TSMeAvatarTableViewCell.swift */; };
+		2A23E89C1E977E310029CFCA /* TSMeAvatarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E80D1E977E310029CFCA /* TSMeAvatarTableViewCell.xib */; };
+		2A23E89D1E977E310029CFCA /* TSMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E80E1E977E310029CFCA /* TSMeViewController.swift */; };
+		2A23E89E1E977E310029CFCA /* TSMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E80F1E977E310029CFCA /* TSMeViewController.xib */; };
+		2A23E89F1E977E310029CFCA /* TSMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8111E977E310029CFCA /* TSMessageTableViewCell.swift */; };
+		2A23E8A01E977E310029CFCA /* TSMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8121E977E310029CFCA /* TSMessageTableViewCell.xib */; };
+		2A23E8A11E977E310029CFCA /* TSMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8131E977E310029CFCA /* TSMessageViewController.swift */; };
+		2A23E8A21E977E310029CFCA /* TSMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8141E977E310029CFCA /* TSMessageViewController.xib */; };
+		2A23E8A31E977E310029CFCA /* TSMessageActionFloatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8161E977E310029CFCA /* TSMessageActionFloatView.swift */; };
+		2A23E8A41E977E310029CFCA /* TSMomentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8181E977E310029CFCA /* TSMomentsViewController.swift */; };
+		2A23E8A51E977E310029CFCA /* TSMomentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8191E977E310029CFCA /* TSMomentsViewController.xib */; };
+		2A23E8A61E977E310029CFCA /* TSTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E81B1E977E310029CFCA /* TSTabbarViewController.swift */; };
+		2A23E8A71E977E310029CFCA /* TSWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E81D1E977E310029CFCA /* TSWebViewController.swift */; };
+		2A23E8A81E977E310029CFCA /* TSFullyHorizontalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E81F1E977E310029CFCA /* TSFullyHorizontalFlowLayout.swift */; };
+		2A23E8A91E977E310029CFCA /* TSGlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8201E977E310029CFCA /* TSGlobalHelper.swift */; };
+		2A23E8AA1E977E310029CFCA /* TSImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8211E977E310029CFCA /* TSImagePicker.swift */; };
+		2A23E8AB1E977E310029CFCA /* TSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8221E977E310029CFCA /* TSLogger.swift */; };
+		2A23E8AC1E977E310029CFCA /* TSNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8231E977E310029CFCA /* TSNavigationBar.swift */; };
+		2A23E8AD1E977E310029CFCA /* TSProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8241E977E310029CFCA /* TSProgressHUD.swift */; };
+		2A23E8AE1E977E310029CFCA /* TSUIColor+WeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8251E977E310029CFCA /* TSUIColor+WeChat.swift */; };
+		2A23E8AF1E977E310029CFCA /* TSUIImage+WeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8261E977E310029CFCA /* TSUIImage+WeChat.swift */; };
+		2A23E8B01E977E310029CFCA /* TSUIImageVIew+WeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8271E977E310029CFCA /* TSUIImageVIew+WeChat.swift */; };
+		2A23E8B11E977E310029CFCA /* AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8291E977E310029CFCA /* AboutApp.swift */; };
+		2A23E8B21E977E310029CFCA /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E82A1E977E310029CFCA /* NSDate+Extension.swift */; };
+		2A23E8B31E977E310029CFCA /* NSDictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E82B1E977E310029CFCA /* NSDictionary+Extension.swift */; };
+		2A23E8B41E977E310029CFCA /* NSObject+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E82C1E977E310029CFCA /* NSObject+String.swift */; };
+		2A23E8B51E977E310029CFCA /* PHAsset+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E82D1E977E310029CFCA /* PHAsset+Extension.swift */; };
+		2A23E8B61E977E310029CFCA /* UIBarButtonItem+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E82E1E977E310029CFCA /* UIBarButtonItem+Block.swift */; };
+		2A23E8B71E977E310029CFCA /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E82F1E977E310029CFCA /* UISearchBar+Extension.swift */; };
+		2A23E8B81E977E310029CFCA /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8301E977E310029CFCA /* UIView+Frame.swift */; };
+		2A23E8B91E977E310029CFCA /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8311E977E310029CFCA /* UIViewController+Extension.swift */; };
+		2A23E8BA1E977E310029CFCA /* TSAppMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8331E977E310029CFCA /* TSAppMacro.swift */; };
+		2A23E8BB1E977E310029CFCA /* TSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8341E977E310029CFCA /* TSConfig.swift */; };
+		2A23E8BC1E977E310029CFCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8361E977E310029CFCA /* Assets.xcassets */; };
+		2A23E8BD1E977E310029CFCA /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8381E977E310029CFCA /* beep.wav */; };
+		2A23E8BE1E977E310029CFCA /* call.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8391E977E310029CFCA /* call.caf */; };
+		2A23E8BF1E977E310029CFCA /* camera.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E83A1E977E310029CFCA /* camera.wav */; };
+		2A23E8C01E977E310029CFCA /* close.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E83B1E977E310029CFCA /* close.wav */; };
+		2A23E8C11E977E310029CFCA /* hello.amr in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E83C1E977E310029CFCA /* hello.amr */; };
+		2A23E8C21E977E310029CFCA /* msg.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E83D1E977E310029CFCA /* msg.caf */; };
+		2A23E8C31E977E310029CFCA /* msgtoolong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E83E1E977E310029CFCA /* msgtoolong.wav */; };
+		2A23E8C41E977E310029CFCA /* pstncall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E83F1E977E310029CFCA /* pstncall.mp3 */; };
+		2A23E8C51E977E310029CFCA /* sendmsg.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8401E977E310029CFCA /* sendmsg.caf */; };
+		2A23E8C61E977E310029CFCA /* shake_match.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8411E977E310029CFCA /* shake_match.wav */; };
+		2A23E8C71E977E310029CFCA /* shake_nomatch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8421E977E310029CFCA /* shake_nomatch.wav */; };
+		2A23E8C81E977E310029CFCA /* shake_sound_male.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8431E977E310029CFCA /* shake_sound_male.wav */; };
+		2A23E8C91E977E310029CFCA /* country_code.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8441E977E310029CFCA /* country_code.txt */; };
+		2A23E8CA1E977E310029CFCA /* Expression.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8451E977E310029CFCA /* Expression.bundle */; };
+		2A23E8CB1E977E310029CFCA /* Expression.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8461E977E310029CFCA /* Expression.plist */; };
+		2A23E8CC1E977E310029CFCA /* chat.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8481E977E310029CFCA /* chat.json */; };
+		2A23E8CD1E977E310029CFCA /* contact.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8491E977E310029CFCA /* contact.json */; };
+		2A23E8CE1E977E310029CFCA /* message.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E84A1E977E310029CFCA /* message.json */; };
+		2A23E8CF1E977E310029CFCA /* moments.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E84B1E977E310029CFCA /* moments.json */; };
+		2A23E8D01E977E310029CFCA /* Kenny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E84C1E977E310029CFCA /* Kenny.jpg */; };
+		2A23E8D11E977E310029CFCA /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E84D1E977E310029CFCA /* Media.xcassets */; };
+		2A23E8D21E977E310029CFCA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A23E8501E977E310029CFCA /* Info.plist */; };
+		2A23E8D31E977E310029CFCA /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23E8511E977E310029CFCA /* Notes.swift */; };
+		44B656170D104113267D6557 /* Pods_YJWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D1E52C3604EAD1803594A9 /* Pods_YJWeChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A23E7A31E977D110029CFCA /* YJWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A23E7A61E977D110029CFCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2A23E7A81E977D110029CFCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2A23E7AB1E977D110029CFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2A23E7AD1E977D110029CFCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2A23E7B01E977D110029CFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2A23E7B21E977D110029CFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A23E7B91E977E310029CFCA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A23E7BD1E977E310029CFCA /* TSChatBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatBaseCell.swift; sourceTree = "<group>"; };
+		2A23E7BE1E977E310029CFCA /* TSChatCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatCellDelegate.swift; sourceTree = "<group>"; };
+		2A23E7BF1E977E310029CFCA /* TSChatImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatImageCell.swift; sourceTree = "<group>"; };
+		2A23E7C01E977E310029CFCA /* TSChatImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatImageCell.xib; sourceTree = "<group>"; };
+		2A23E7C11E977E310029CFCA /* TSChatSystemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatSystemCell.swift; sourceTree = "<group>"; };
+		2A23E7C21E977E310029CFCA /* TSChatSystemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatSystemCell.xib; sourceTree = "<group>"; };
+		2A23E7C31E977E310029CFCA /* TSChatTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatTextCell.swift; sourceTree = "<group>"; };
+		2A23E7C41E977E310029CFCA /* TSChatTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatTextCell.xib; sourceTree = "<group>"; };
+		2A23E7C51E977E310029CFCA /* TSChatTimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatTimeCell.swift; sourceTree = "<group>"; };
+		2A23E7C61E977E310029CFCA /* TSChatTimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatTimeCell.xib; sourceTree = "<group>"; };
+		2A23E7C71E977E310029CFCA /* TSChatVoiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatVoiceCell.swift; sourceTree = "<group>"; };
+		2A23E7C81E977E310029CFCA /* TSChatVoiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatVoiceCell.xib; sourceTree = "<group>"; };
+		2A23E7CA1E977E310029CFCA /* AudioDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDelegate.swift; sourceTree = "<group>"; };
+		2A23E7CB1E977E310029CFCA /* AudioFilesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFilesManager.swift; sourceTree = "<group>"; };
+		2A23E7CC1E977E310029CFCA /* AudioPlayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayManager.swift; sourceTree = "<group>"; };
+		2A23E7CD1E977E310029CFCA /* AudioRecordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRecordManager.swift; sourceTree = "<group>"; };
+		2A23E7CE1E977E310029CFCA /* ChatConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatConfig.swift; sourceTree = "<group>"; };
+		2A23E7CF1E977E310029CFCA /* ImageFilesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFilesManager.swift; sourceTree = "<group>"; };
+		2A23E7D01E977E310029CFCA /* TSChatDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatDataManager.swift; sourceTree = "<group>"; };
+		2A23E7D11E977E310029CFCA /* TSChatEmojiDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatEmojiDictionary.swift; sourceTree = "<group>"; };
+		2A23E7D21E977E310029CFCA /* TSChatTextParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatTextParser.swift; sourceTree = "<group>"; };
+		2A23E7D31E977E310029CFCA /* TSYYTextLinePositionModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSYYTextLinePositionModifier.swift; sourceTree = "<group>"; };
+		2A23E7D41E977E310029CFCA /* UIScrollView+ChatAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ChatAdditions.swift"; sourceTree = "<group>"; };
+		2A23E7D51E977E310029CFCA /* UITableView+ChatAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ChatAdditions.swift"; sourceTree = "<group>"; };
+		2A23E7D61E977E310029CFCA /* TSChatViewController+ActionBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSChatViewController+ActionBar.swift"; sourceTree = "<group>"; };
+		2A23E7D71E977E310029CFCA /* TSChatViewController+CellEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSChatViewController+CellEnums.swift"; sourceTree = "<group>"; };
+		2A23E7D81E977E310029CFCA /* TSChatViewController+HandleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSChatViewController+HandleData.swift"; sourceTree = "<group>"; };
+		2A23E7D91E977E310029CFCA /* TSChatViewController+Interaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSChatViewController+Interaction.swift"; sourceTree = "<group>"; };
+		2A23E7DA1E977E310029CFCA /* TSChatViewController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSChatViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		2A23E7DB1E977E310029CFCA /* TSChatViewController+Subviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSChatViewController+Subviews.swift"; sourceTree = "<group>"; };
+		2A23E7DC1E977E310029CFCA /* TSChatViewController+TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSChatViewController+TestData.swift"; sourceTree = "<group>"; };
+		2A23E7DD1E977E310029CFCA /* TSChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatViewController.swift; sourceTree = "<group>"; };
+		2A23E7DE1E977E310029CFCA /* TSChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatViewController.xib; sourceTree = "<group>"; };
+		2A23E7E01E977E310029CFCA /* TSChatActionBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatActionBarView.swift; sourceTree = "<group>"; };
+		2A23E7E11E977E310029CFCA /* TSChatActionBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatActionBarView.xib; sourceTree = "<group>"; };
+		2A23E7E21E977E310029CFCA /* TSChatButton+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSChatButton+UI.swift"; sourceTree = "<group>"; };
+		2A23E7E31E977E310029CFCA /* TSChatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatButton.swift; sourceTree = "<group>"; };
+		2A23E7E41E977E310029CFCA /* TSChatEmotionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatEmotionCell.swift; sourceTree = "<group>"; };
+		2A23E7E51E977E310029CFCA /* TSChatEmotionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatEmotionCell.xib; sourceTree = "<group>"; };
+		2A23E7E61E977E310029CFCA /* TSChatEmotionInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatEmotionInputView.swift; sourceTree = "<group>"; };
+		2A23E7E71E977E310029CFCA /* TSChatEmotionInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatEmotionInputView.xib; sourceTree = "<group>"; };
+		2A23E7E81E977E310029CFCA /* TSChatEmotionScollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatEmotionScollView.swift; sourceTree = "<group>"; };
+		2A23E7E91E977E310029CFCA /* TSChatShareMoreCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatShareMoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		2A23E7EA1E977E310029CFCA /* TSChatShareMoreCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatShareMoreCollectionViewCell.xib; sourceTree = "<group>"; };
+		2A23E7EB1E977E310029CFCA /* TSChatShareMoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatShareMoreView.swift; sourceTree = "<group>"; };
+		2A23E7EC1E977E310029CFCA /* TSChatShareMoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatShareMoreView.xib; sourceTree = "<group>"; };
+		2A23E7ED1E977E310029CFCA /* TSChatSystemEdgeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatSystemEdgeLabel.swift; sourceTree = "<group>"; };
+		2A23E7EE1E977E310029CFCA /* TSChatVoiceIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatVoiceIndicatorView.swift; sourceTree = "<group>"; };
+		2A23E7EF1E977E310029CFCA /* TSChatVoiceIndicatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatVoiceIndicatorView.xib; sourceTree = "<group>"; };
+		2A23E7F11E977E310029CFCA /* TSContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSContactsViewController.swift; sourceTree = "<group>"; };
+		2A23E7F21E977E310029CFCA /* TSContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSContactsViewController.xib; sourceTree = "<group>"; };
+		2A23E7F31E977E310029CFCA /* TSContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSContactTableViewCell.swift; sourceTree = "<group>"; };
+		2A23E7F41E977E310029CFCA /* TSContactTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSContactTableViewCell.xib; sourceTree = "<group>"; };
+		2A23E7F71E977E310029CFCA /* HttpManager+UploadAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HttpManager+UploadAudio.swift"; sourceTree = "<group>"; };
+		2A23E7F81E977E310029CFCA /* HttpManager+UploadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HttpManager+UploadImage.swift"; sourceTree = "<group>"; };
+		2A23E7F91E977E310029CFCA /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
+		2A23E7FA1E977E310029CFCA /* TSResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSResponseSerializer.swift; sourceTree = "<group>"; };
+		2A23E7FC1E977E310029CFCA /* TSChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatModel.swift; sourceTree = "<group>"; };
+		2A23E7FD1E977E310029CFCA /* TSChatSubModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatSubModel.swift; sourceTree = "<group>"; };
+		2A23E7FE1E977E310029CFCA /* TSContactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSContactModel.swift; sourceTree = "<group>"; };
+		2A23E7FF1E977E310029CFCA /* TSMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSMessageModel.swift; sourceTree = "<group>"; };
+		2A23E8001E977E310029CFCA /* TSModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSModel.swift; sourceTree = "<group>"; };
+		2A23E8011E977E310029CFCA /* TSModelTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSModelTransformer.swift; sourceTree = "<group>"; };
+		2A23E8021E977E310029CFCA /* TSUploadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSUploadModel.swift; sourceTree = "<group>"; };
+		2A23E8031E977E310029CFCA /* TSApplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSApplicationManager.swift; sourceTree = "<group>"; };
+		2A23E8041E977E310029CFCA /* TSLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSLocationManager.swift; sourceTree = "<group>"; };
+		2A23E8051E977E310029CFCA /* TSUserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSUserManager.swift; sourceTree = "<group>"; };
+		2A23E8071E977E310029CFCA /* TSDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSDiscoverViewController.swift; sourceTree = "<group>"; };
+		2A23E8081E977E310029CFCA /* TSDiscoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSDiscoverViewController.xib; sourceTree = "<group>"; };
+		2A23E8091E977E310029CFCA /* TSImageTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSImageTextTableViewCell.swift; sourceTree = "<group>"; };
+		2A23E80A1E977E310029CFCA /* TSImageTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSImageTextTableViewCell.xib; sourceTree = "<group>"; };
+		2A23E80C1E977E310029CFCA /* TSMeAvatarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSMeAvatarTableViewCell.swift; sourceTree = "<group>"; };
+		2A23E80D1E977E310029CFCA /* TSMeAvatarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSMeAvatarTableViewCell.xib; sourceTree = "<group>"; };
+		2A23E80E1E977E310029CFCA /* TSMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSMeViewController.swift; sourceTree = "<group>"; };
+		2A23E80F1E977E310029CFCA /* TSMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSMeViewController.xib; sourceTree = "<group>"; };
+		2A23E8111E977E310029CFCA /* TSMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSMessageTableViewCell.swift; sourceTree = "<group>"; };
+		2A23E8121E977E310029CFCA /* TSMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSMessageTableViewCell.xib; sourceTree = "<group>"; };
+		2A23E8131E977E310029CFCA /* TSMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSMessageViewController.swift; sourceTree = "<group>"; };
+		2A23E8141E977E310029CFCA /* TSMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSMessageViewController.xib; sourceTree = "<group>"; };
+		2A23E8161E977E310029CFCA /* TSMessageActionFloatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSMessageActionFloatView.swift; sourceTree = "<group>"; };
+		2A23E8181E977E310029CFCA /* TSMomentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSMomentsViewController.swift; sourceTree = "<group>"; };
+		2A23E8191E977E310029CFCA /* TSMomentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSMomentsViewController.xib; sourceTree = "<group>"; };
+		2A23E81B1E977E310029CFCA /* TSTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTabbarViewController.swift; sourceTree = "<group>"; };
+		2A23E81D1E977E310029CFCA /* TSWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSWebViewController.swift; sourceTree = "<group>"; };
+		2A23E81F1E977E310029CFCA /* TSFullyHorizontalFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSFullyHorizontalFlowLayout.swift; sourceTree = "<group>"; };
+		2A23E8201E977E310029CFCA /* TSGlobalHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSGlobalHelper.swift; sourceTree = "<group>"; };
+		2A23E8211E977E310029CFCA /* TSImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSImagePicker.swift; sourceTree = "<group>"; };
+		2A23E8221E977E310029CFCA /* TSLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSLogger.swift; sourceTree = "<group>"; };
+		2A23E8231E977E310029CFCA /* TSNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSNavigationBar.swift; sourceTree = "<group>"; };
+		2A23E8241E977E310029CFCA /* TSProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSProgressHUD.swift; sourceTree = "<group>"; };
+		2A23E8251E977E310029CFCA /* TSUIColor+WeChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSUIColor+WeChat.swift"; sourceTree = "<group>"; };
+		2A23E8261E977E310029CFCA /* TSUIImage+WeChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSUIImage+WeChat.swift"; sourceTree = "<group>"; };
+		2A23E8271E977E310029CFCA /* TSUIImageVIew+WeChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSUIImageVIew+WeChat.swift"; sourceTree = "<group>"; };
+		2A23E8291E977E310029CFCA /* AboutApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutApp.swift; sourceTree = "<group>"; };
+		2A23E82A1E977E310029CFCA /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		2A23E82B1E977E310029CFCA /* NSDictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Extension.swift"; sourceTree = "<group>"; };
+		2A23E82C1E977E310029CFCA /* NSObject+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+String.swift"; sourceTree = "<group>"; };
+		2A23E82D1E977E310029CFCA /* PHAsset+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PHAsset+Extension.swift"; sourceTree = "<group>"; };
+		2A23E82E1E977E310029CFCA /* UIBarButtonItem+Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Block.swift"; sourceTree = "<group>"; };
+		2A23E82F1E977E310029CFCA /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extension.swift"; sourceTree = "<group>"; };
+		2A23E8301E977E310029CFCA /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		2A23E8311E977E310029CFCA /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		2A23E8331E977E310029CFCA /* TSAppMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSAppMacro.swift; sourceTree = "<group>"; };
+		2A23E8341E977E310029CFCA /* TSConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSConfig.swift; sourceTree = "<group>"; };
+		2A23E8361E977E310029CFCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A23E8381E977E310029CFCA /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
+		2A23E8391E977E310029CFCA /* call.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = call.caf; sourceTree = "<group>"; };
+		2A23E83A1E977E310029CFCA /* camera.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = camera.wav; sourceTree = "<group>"; };
+		2A23E83B1E977E310029CFCA /* close.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = close.wav; sourceTree = "<group>"; };
+		2A23E83C1E977E310029CFCA /* hello.amr */ = {isa = PBXFileReference; lastKnownFileType = file; path = hello.amr; sourceTree = "<group>"; };
+		2A23E83D1E977E310029CFCA /* msg.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = msg.caf; sourceTree = "<group>"; };
+		2A23E83E1E977E310029CFCA /* msgtoolong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = msgtoolong.wav; sourceTree = "<group>"; };
+		2A23E83F1E977E310029CFCA /* pstncall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pstncall.mp3; sourceTree = "<group>"; };
+		2A23E8401E977E310029CFCA /* sendmsg.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sendmsg.caf; sourceTree = "<group>"; };
+		2A23E8411E977E310029CFCA /* shake_match.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shake_match.wav; sourceTree = "<group>"; };
+		2A23E8421E977E310029CFCA /* shake_nomatch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shake_nomatch.wav; sourceTree = "<group>"; };
+		2A23E8431E977E310029CFCA /* shake_sound_male.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shake_sound_male.wav; sourceTree = "<group>"; };
+		2A23E8441E977E310029CFCA /* country_code.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = country_code.txt; sourceTree = "<group>"; };
+		2A23E8451E977E310029CFCA /* Expression.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Expression.bundle; sourceTree = "<group>"; };
+		2A23E8461E977E310029CFCA /* Expression.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expression.plist; sourceTree = "<group>"; };
+		2A23E8481E977E310029CFCA /* chat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chat.json; sourceTree = "<group>"; };
+		2A23E8491E977E310029CFCA /* contact.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contact.json; sourceTree = "<group>"; };
+		2A23E84A1E977E310029CFCA /* message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = message.json; sourceTree = "<group>"; };
+		2A23E84B1E977E310029CFCA /* moments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = moments.json; sourceTree = "<group>"; };
+		2A23E84C1E977E310029CFCA /* Kenny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kenny.jpg; sourceTree = "<group>"; };
+		2A23E84D1E977E310029CFCA /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		2A23E84E1E977E310029CFCA /* wechat.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = wechat.playground; sourceTree = "<group>"; };
+		2A23E8501E977E310029CFCA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A23E8511E977E310029CFCA /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		2A23E8521E977E310029CFCA /* YJWeChat-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YJWeChat-Bridging-Header.h"; sourceTree = "<group>"; };
+		9D24F103BE3BFA85D552A7BB /* Pods-YJWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJWeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YJWeChat/Pods-YJWeChat.debug.xcconfig"; sourceTree = "<group>"; };
+		B04BC44769819790F67286F6 /* Pods-YJWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-YJWeChat/Pods-YJWeChat.release.xcconfig"; sourceTree = "<group>"; };
+		C9D1E52C3604EAD1803594A9 /* Pods_YJWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YJWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +282,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B656170D104113267D6557 /* Pods_YJWeChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +292,10 @@
 		2A23E79A1E977D110029CFCA = {
 			isa = PBXGroup;
 			children = (
-				2A23E7A51E977D110029CFCA /* YJWeChat */,
+				2A23E7B81E977E310029CFCA /* YJWeChat */,
 				2A23E7A41E977D110029CFCA /* Products */,
+				A6C38EF176FEBF24E000F371 /* Pods */,
+				846E18D1BA5EFDA4655EA4D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,17 +307,343 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2A23E7A51E977D110029CFCA /* YJWeChat */ = {
+		2A23E7B81E977E310029CFCA /* YJWeChat */ = {
 			isa = PBXGroup;
 			children = (
-				2A23E7A61E977D110029CFCA /* AppDelegate.swift */,
-				2A23E7A81E977D110029CFCA /* ViewController.swift */,
-				2A23E7AA1E977D110029CFCA /* Main.storyboard */,
-				2A23E7AD1E977D110029CFCA /* Assets.xcassets */,
-				2A23E7AF1E977D110029CFCA /* LaunchScreen.storyboard */,
-				2A23E7B21E977D110029CFCA /* Info.plist */,
+				2A23E7B91E977E310029CFCA /* AppDelegate.swift */,
+				2A23E7BA1E977E310029CFCA /* Classes */,
+				2A23E81E1E977E310029CFCA /* General */,
+				2A23E8281E977E310029CFCA /* Helpers */,
+				2A23E8321E977E310029CFCA /* Macro */,
+				2A23E8351E977E310029CFCA /* Resources */,
+				2A23E84F1E977E310029CFCA /* Supportting Files */,
 			);
 			path = YJWeChat;
+			sourceTree = "<group>";
+		};
+		2A23E7BA1E977E310029CFCA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E7BB1E977E310029CFCA /* Chat */,
+				2A23E7F01E977E310029CFCA /* Contacts */,
+				2A23E7F51E977E310029CFCA /* CoreModule */,
+				2A23E8061E977E310029CFCA /* Discover */,
+				2A23E80B1E977E310029CFCA /* Me */,
+				2A23E8101E977E310029CFCA /* Message */,
+				2A23E8171E977E310029CFCA /* Moments */,
+				2A23E81A1E977E310029CFCA /* Tabbar */,
+				2A23E81C1E977E310029CFCA /* Web */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2A23E7BB1E977E310029CFCA /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E7BC1E977E310029CFCA /* Cells */,
+				2A23E7C91E977E310029CFCA /* ChatHelper */,
+				2A23E7D61E977E310029CFCA /* TSChatViewController+ActionBar.swift */,
+				2A23E7D71E977E310029CFCA /* TSChatViewController+CellEnums.swift */,
+				2A23E7D81E977E310029CFCA /* TSChatViewController+HandleData.swift */,
+				2A23E7D91E977E310029CFCA /* TSChatViewController+Interaction.swift */,
+				2A23E7DA1E977E310029CFCA /* TSChatViewController+Keyboard.swift */,
+				2A23E7DB1E977E310029CFCA /* TSChatViewController+Subviews.swift */,
+				2A23E7DC1E977E310029CFCA /* TSChatViewController+TestData.swift */,
+				2A23E7DD1E977E310029CFCA /* TSChatViewController.swift */,
+				2A23E7DE1E977E310029CFCA /* TSChatViewController.xib */,
+				2A23E7DF1E977E310029CFCA /* Views */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		2A23E7BC1E977E310029CFCA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E7BD1E977E310029CFCA /* TSChatBaseCell.swift */,
+				2A23E7BE1E977E310029CFCA /* TSChatCellDelegate.swift */,
+				2A23E7BF1E977E310029CFCA /* TSChatImageCell.swift */,
+				2A23E7C01E977E310029CFCA /* TSChatImageCell.xib */,
+				2A23E7C11E977E310029CFCA /* TSChatSystemCell.swift */,
+				2A23E7C21E977E310029CFCA /* TSChatSystemCell.xib */,
+				2A23E7C31E977E310029CFCA /* TSChatTextCell.swift */,
+				2A23E7C41E977E310029CFCA /* TSChatTextCell.xib */,
+				2A23E7C51E977E310029CFCA /* TSChatTimeCell.swift */,
+				2A23E7C61E977E310029CFCA /* TSChatTimeCell.xib */,
+				2A23E7C71E977E310029CFCA /* TSChatVoiceCell.swift */,
+				2A23E7C81E977E310029CFCA /* TSChatVoiceCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2A23E7C91E977E310029CFCA /* ChatHelper */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E7CA1E977E310029CFCA /* AudioDelegate.swift */,
+				2A23E7CB1E977E310029CFCA /* AudioFilesManager.swift */,
+				2A23E7CC1E977E310029CFCA /* AudioPlayManager.swift */,
+				2A23E7CD1E977E310029CFCA /* AudioRecordManager.swift */,
+				2A23E7CE1E977E310029CFCA /* ChatConfig.swift */,
+				2A23E7CF1E977E310029CFCA /* ImageFilesManager.swift */,
+				2A23E7D01E977E310029CFCA /* TSChatDataManager.swift */,
+				2A23E7D11E977E310029CFCA /* TSChatEmojiDictionary.swift */,
+				2A23E7D21E977E310029CFCA /* TSChatTextParser.swift */,
+				2A23E7D31E977E310029CFCA /* TSYYTextLinePositionModifier.swift */,
+				2A23E7D41E977E310029CFCA /* UIScrollView+ChatAdditions.swift */,
+				2A23E7D51E977E310029CFCA /* UITableView+ChatAdditions.swift */,
+			);
+			path = ChatHelper;
+			sourceTree = "<group>";
+		};
+		2A23E7DF1E977E310029CFCA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E7E01E977E310029CFCA /* TSChatActionBarView.swift */,
+				2A23E7E11E977E310029CFCA /* TSChatActionBarView.xib */,
+				2A23E7E21E977E310029CFCA /* TSChatButton+UI.swift */,
+				2A23E7E31E977E310029CFCA /* TSChatButton.swift */,
+				2A23E7E41E977E310029CFCA /* TSChatEmotionCell.swift */,
+				2A23E7E51E977E310029CFCA /* TSChatEmotionCell.xib */,
+				2A23E7E61E977E310029CFCA /* TSChatEmotionInputView.swift */,
+				2A23E7E71E977E310029CFCA /* TSChatEmotionInputView.xib */,
+				2A23E7E81E977E310029CFCA /* TSChatEmotionScollView.swift */,
+				2A23E7E91E977E310029CFCA /* TSChatShareMoreCollectionViewCell.swift */,
+				2A23E7EA1E977E310029CFCA /* TSChatShareMoreCollectionViewCell.xib */,
+				2A23E7EB1E977E310029CFCA /* TSChatShareMoreView.swift */,
+				2A23E7EC1E977E310029CFCA /* TSChatShareMoreView.xib */,
+				2A23E7ED1E977E310029CFCA /* TSChatSystemEdgeLabel.swift */,
+				2A23E7EE1E977E310029CFCA /* TSChatVoiceIndicatorView.swift */,
+				2A23E7EF1E977E310029CFCA /* TSChatVoiceIndicatorView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A23E7F01E977E310029CFCA /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E7F11E977E310029CFCA /* TSContactsViewController.swift */,
+				2A23E7F21E977E310029CFCA /* TSContactsViewController.xib */,
+				2A23E7F31E977E310029CFCA /* TSContactTableViewCell.swift */,
+				2A23E7F41E977E310029CFCA /* TSContactTableViewCell.xib */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		2A23E7F51E977E310029CFCA /* CoreModule */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E7F61E977E310029CFCA /* Http */,
+				2A23E7FB1E977E310029CFCA /* Models */,
+				2A23E8031E977E310029CFCA /* TSApplicationManager.swift */,
+				2A23E8041E977E310029CFCA /* TSLocationManager.swift */,
+				2A23E8051E977E310029CFCA /* TSUserManager.swift */,
+			);
+			path = CoreModule;
+			sourceTree = "<group>";
+		};
+		2A23E7F61E977E310029CFCA /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E7F71E977E310029CFCA /* HttpManager+UploadAudio.swift */,
+				2A23E7F81E977E310029CFCA /* HttpManager+UploadImage.swift */,
+				2A23E7F91E977E310029CFCA /* HttpManager.swift */,
+				2A23E7FA1E977E310029CFCA /* TSResponseSerializer.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		2A23E7FB1E977E310029CFCA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E7FC1E977E310029CFCA /* TSChatModel.swift */,
+				2A23E7FD1E977E310029CFCA /* TSChatSubModel.swift */,
+				2A23E7FE1E977E310029CFCA /* TSContactModel.swift */,
+				2A23E7FF1E977E310029CFCA /* TSMessageModel.swift */,
+				2A23E8001E977E310029CFCA /* TSModel.swift */,
+				2A23E8011E977E310029CFCA /* TSModelTransformer.swift */,
+				2A23E8021E977E310029CFCA /* TSUploadModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A23E8061E977E310029CFCA /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E8071E977E310029CFCA /* TSDiscoverViewController.swift */,
+				2A23E8081E977E310029CFCA /* TSDiscoverViewController.xib */,
+				2A23E8091E977E310029CFCA /* TSImageTextTableViewCell.swift */,
+				2A23E80A1E977E310029CFCA /* TSImageTextTableViewCell.xib */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		2A23E80B1E977E310029CFCA /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E80C1E977E310029CFCA /* TSMeAvatarTableViewCell.swift */,
+				2A23E80D1E977E310029CFCA /* TSMeAvatarTableViewCell.xib */,
+				2A23E80E1E977E310029CFCA /* TSMeViewController.swift */,
+				2A23E80F1E977E310029CFCA /* TSMeViewController.xib */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		2A23E8101E977E310029CFCA /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E8111E977E310029CFCA /* TSMessageTableViewCell.swift */,
+				2A23E8121E977E310029CFCA /* TSMessageTableViewCell.xib */,
+				2A23E8131E977E310029CFCA /* TSMessageViewController.swift */,
+				2A23E8141E977E310029CFCA /* TSMessageViewController.xib */,
+				2A23E8151E977E310029CFCA /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		2A23E8151E977E310029CFCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E8161E977E310029CFCA /* TSMessageActionFloatView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A23E8171E977E310029CFCA /* Moments */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E8181E977E310029CFCA /* TSMomentsViewController.swift */,
+				2A23E8191E977E310029CFCA /* TSMomentsViewController.xib */,
+			);
+			path = Moments;
+			sourceTree = "<group>";
+		};
+		2A23E81A1E977E310029CFCA /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E81B1E977E310029CFCA /* TSTabbarViewController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		2A23E81C1E977E310029CFCA /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E81D1E977E310029CFCA /* TSWebViewController.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		2A23E81E1E977E310029CFCA /* General */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E81F1E977E310029CFCA /* TSFullyHorizontalFlowLayout.swift */,
+				2A23E8201E977E310029CFCA /* TSGlobalHelper.swift */,
+				2A23E8211E977E310029CFCA /* TSImagePicker.swift */,
+				2A23E8221E977E310029CFCA /* TSLogger.swift */,
+				2A23E8231E977E310029CFCA /* TSNavigationBar.swift */,
+				2A23E8241E977E310029CFCA /* TSProgressHUD.swift */,
+				2A23E8251E977E310029CFCA /* TSUIColor+WeChat.swift */,
+				2A23E8261E977E310029CFCA /* TSUIImage+WeChat.swift */,
+				2A23E8271E977E310029CFCA /* TSUIImageVIew+WeChat.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		2A23E8281E977E310029CFCA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E8291E977E310029CFCA /* AboutApp.swift */,
+				2A23E82A1E977E310029CFCA /* NSDate+Extension.swift */,
+				2A23E82B1E977E310029CFCA /* NSDictionary+Extension.swift */,
+				2A23E82C1E977E310029CFCA /* NSObject+String.swift */,
+				2A23E82D1E977E310029CFCA /* PHAsset+Extension.swift */,
+				2A23E82E1E977E310029CFCA /* UIBarButtonItem+Block.swift */,
+				2A23E82F1E977E310029CFCA /* UISearchBar+Extension.swift */,
+				2A23E8301E977E310029CFCA /* UIView+Frame.swift */,
+				2A23E8311E977E310029CFCA /* UIViewController+Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2A23E8321E977E310029CFCA /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E8331E977E310029CFCA /* TSAppMacro.swift */,
+				2A23E8341E977E310029CFCA /* TSConfig.swift */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		2A23E8351E977E310029CFCA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E8361E977E310029CFCA /* Assets.xcassets */,
+				2A23E84D1E977E310029CFCA /* Media.xcassets */,
+				2A23E8371E977E310029CFCA /* Audio */,
+				2A23E8441E977E310029CFCA /* country_code.txt */,
+				2A23E8451E977E310029CFCA /* Expression.bundle */,
+				2A23E8461E977E310029CFCA /* Expression.plist */,
+				2A23E8471E977E310029CFCA /* JSON */,
+				2A23E84C1E977E310029CFCA /* Kenny.jpg */,
+				2A23E84E1E977E310029CFCA /* wechat.playground */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2A23E8371E977E310029CFCA /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E8381E977E310029CFCA /* beep.wav */,
+				2A23E8391E977E310029CFCA /* call.caf */,
+				2A23E83A1E977E310029CFCA /* camera.wav */,
+				2A23E83B1E977E310029CFCA /* close.wav */,
+				2A23E83C1E977E310029CFCA /* hello.amr */,
+				2A23E83D1E977E310029CFCA /* msg.caf */,
+				2A23E83E1E977E310029CFCA /* msgtoolong.wav */,
+				2A23E83F1E977E310029CFCA /* pstncall.mp3 */,
+				2A23E8401E977E310029CFCA /* sendmsg.caf */,
+				2A23E8411E977E310029CFCA /* shake_match.wav */,
+				2A23E8421E977E310029CFCA /* shake_nomatch.wav */,
+				2A23E8431E977E310029CFCA /* shake_sound_male.wav */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		2A23E8471E977E310029CFCA /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E8481E977E310029CFCA /* chat.json */,
+				2A23E8491E977E310029CFCA /* contact.json */,
+				2A23E84A1E977E310029CFCA /* message.json */,
+				2A23E84B1E977E310029CFCA /* moments.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		2A23E84F1E977E310029CFCA /* Supportting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A23E8501E977E310029CFCA /* Info.plist */,
+				2A23E8511E977E310029CFCA /* Notes.swift */,
+				2A23E8521E977E310029CFCA /* YJWeChat-Bridging-Header.h */,
+			);
+			path = "Supportting Files";
+			sourceTree = "<group>";
+		};
+		846E18D1BA5EFDA4655EA4D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9D1E52C3604EAD1803594A9 /* Pods_YJWeChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6C38EF176FEBF24E000F371 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D24F103BE3BFA85D552A7BB /* Pods-YJWeChat.debug.xcconfig */,
+				B04BC44769819790F67286F6 /* Pods-YJWeChat.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +653,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A23E7B51E977D110029CFCA /* Build configuration list for PBXNativeTarget "YJWeChat" */;
 			buildPhases = (
+				7F19CD343F73508303197C4A /* [CP] Check Pods Manifest.lock */,
 				2A23E79F1E977D110029CFCA /* Sources */,
 				2A23E7A01E977D110029CFCA /* Frameworks */,
 				2A23E7A11E977D110029CFCA /* Resources */,
+				F638B78CF88D8603602CC8E9 /* [CP] Embed Pods Frameworks */,
+				417D354ED996D385CF22E20F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,44 +709,197 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A23E7B11E977D110029CFCA /* LaunchScreen.storyboard in Resources */,
-				2A23E7AE1E977D110029CFCA /* Assets.xcassets in Resources */,
-				2A23E7AC1E977D110029CFCA /* Main.storyboard in Resources */,
+				2A23E87C1E977E310029CFCA /* TSChatEmotionInputView.xib in Resources */,
+				2A23E8CA1E977E310029CFCA /* Expression.bundle in Resources */,
+				2A23E8C51E977E310029CFCA /* sendmsg.caf in Resources */,
+				2A23E8C11E977E310029CFCA /* hello.amr in Resources */,
+				2A23E8C61E977E310029CFCA /* shake_match.wav in Resources */,
+				2A23E8C71E977E310029CFCA /* shake_nomatch.wav in Resources */,
+				2A23E8861E977E310029CFCA /* TSContactsViewController.xib in Resources */,
+				2A23E8C31E977E310029CFCA /* msgtoolong.wav in Resources */,
+				2A23E8D21E977E310029CFCA /* Info.plist in Resources */,
+				2A23E8BC1E977E310029CFCA /* Assets.xcassets in Resources */,
+				2A23E8CE1E977E310029CFCA /* message.json in Resources */,
+				2A23E8811E977E310029CFCA /* TSChatShareMoreView.xib in Resources */,
+				2A23E8841E977E310029CFCA /* TSChatVoiceIndicatorView.xib in Resources */,
+				2A23E8BD1E977E310029CFCA /* beep.wav in Resources */,
+				2A23E87A1E977E310029CFCA /* TSChatEmotionCell.xib in Resources */,
+				2A23E8C01E977E310029CFCA /* close.wav in Resources */,
+				2A23E85F1E977E310029CFCA /* TSChatVoiceCell.xib in Resources */,
+				2A23E8CD1E977E310029CFCA /* contact.json in Resources */,
+				2A23E8C21E977E310029CFCA /* msg.caf in Resources */,
+				2A23E8761E977E310029CFCA /* TSChatActionBarView.xib in Resources */,
+				2A23E89E1E977E310029CFCA /* TSMeViewController.xib in Resources */,
+				2A23E8CB1E977E310029CFCA /* Expression.plist in Resources */,
+				2A23E8D11E977E310029CFCA /* Media.xcassets in Resources */,
+				2A23E8571E977E310029CFCA /* TSChatImageCell.xib in Resources */,
+				2A23E85D1E977E310029CFCA /* TSChatTimeCell.xib in Resources */,
+				2A23E8D01E977E310029CFCA /* Kenny.jpg in Resources */,
+				2A23E8BE1E977E310029CFCA /* call.caf in Resources */,
+				2A23E8981E977E310029CFCA /* TSDiscoverViewController.xib in Resources */,
+				2A23E8C91E977E310029CFCA /* country_code.txt in Resources */,
+				2A23E8BF1E977E310029CFCA /* camera.wav in Resources */,
+				2A23E8C81E977E310029CFCA /* shake_sound_male.wav in Resources */,
+				2A23E8A21E977E310029CFCA /* TSMessageViewController.xib in Resources */,
+				2A23E87F1E977E310029CFCA /* TSChatShareMoreCollectionViewCell.xib in Resources */,
+				2A23E8A51E977E310029CFCA /* TSMomentsViewController.xib in Resources */,
+				2A23E8CF1E977E310029CFCA /* moments.json in Resources */,
+				2A23E8CC1E977E310029CFCA /* chat.json in Resources */,
+				2A23E8741E977E310029CFCA /* TSChatViewController.xib in Resources */,
+				2A23E8881E977E310029CFCA /* TSContactTableViewCell.xib in Resources */,
+				2A23E8A01E977E310029CFCA /* TSMessageTableViewCell.xib in Resources */,
+				2A23E8591E977E310029CFCA /* TSChatSystemCell.xib in Resources */,
+				2A23E85B1E977E310029CFCA /* TSChatTextCell.xib in Resources */,
+				2A23E8C41E977E310029CFCA /* pstncall.mp3 in Resources */,
+				2A23E89A1E977E310029CFCA /* TSImageTextTableViewCell.xib in Resources */,
+				2A23E89C1E977E310029CFCA /* TSMeAvatarTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		417D354ED996D385CF22E20F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YJWeChat/Pods-YJWeChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F19CD343F73508303197C4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F638B78CF88D8603602CC8E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YJWeChat/Pods-YJWeChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A23E79F1E977D110029CFCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A23E7A91E977D110029CFCA /* ViewController.swift in Sources */,
-				2A23E7A71E977D110029CFCA /* AppDelegate.swift in Sources */,
+				2A23E8551E977E310029CFCA /* TSChatCellDelegate.swift in Sources */,
+				2A23E8B11E977E310029CFCA /* AboutApp.swift in Sources */,
+				2A23E87D1E977E310029CFCA /* TSChatEmotionScollView.swift in Sources */,
+				2A23E85A1E977E310029CFCA /* TSChatTextCell.swift in Sources */,
+				2A23E8A91E977E310029CFCA /* TSGlobalHelper.swift in Sources */,
+				2A23E8781E977E310029CFCA /* TSChatButton.swift in Sources */,
+				2A23E8531E977E310029CFCA /* AppDelegate.swift in Sources */,
+				2A23E8961E977E310029CFCA /* TSUserManager.swift in Sources */,
+				2A23E8631E977E310029CFCA /* AudioRecordManager.swift in Sources */,
+				2A23E86D1E977E310029CFCA /* TSChatViewController+CellEnums.swift in Sources */,
+				2A23E8561E977E310029CFCA /* TSChatImageCell.swift in Sources */,
+				2A23E88F1E977E310029CFCA /* TSContactModel.swift in Sources */,
+				2A23E8B61E977E310029CFCA /* UIBarButtonItem+Block.swift in Sources */,
+				2A23E86E1E977E310029CFCA /* TSChatViewController+HandleData.swift in Sources */,
+				2A23E8A31E977E310029CFCA /* TSMessageActionFloatView.swift in Sources */,
+				2A23E8B31E977E310029CFCA /* NSDictionary+Extension.swift in Sources */,
+				2A23E86B1E977E310029CFCA /* UITableView+ChatAdditions.swift in Sources */,
+				2A23E86A1E977E310029CFCA /* UIScrollView+ChatAdditions.swift in Sources */,
+				2A23E8901E977E310029CFCA /* TSMessageModel.swift in Sources */,
+				2A23E8AC1E977E310029CFCA /* TSNavigationBar.swift in Sources */,
+				2A23E8A41E977E310029CFCA /* TSMomentsViewController.swift in Sources */,
+				2A23E8751E977E310029CFCA /* TSChatActionBarView.swift in Sources */,
+				2A23E8971E977E310029CFCA /* TSDiscoverViewController.swift in Sources */,
+				2A23E8BA1E977E310029CFCA /* TSAppMacro.swift in Sources */,
+				2A23E8721E977E310029CFCA /* TSChatViewController+TestData.swift in Sources */,
+				2A23E8601E977E310029CFCA /* AudioDelegate.swift in Sources */,
+				2A23E86F1E977E310029CFCA /* TSChatViewController+Interaction.swift in Sources */,
+				2A23E8821E977E310029CFCA /* TSChatSystemEdgeLabel.swift in Sources */,
+				2A23E8AF1E977E310029CFCA /* TSUIImage+WeChat.swift in Sources */,
+				2A23E8641E977E310029CFCA /* ChatConfig.swift in Sources */,
+				2A23E86C1E977E310029CFCA /* TSChatViewController+ActionBar.swift in Sources */,
+				2A23E8B01E977E310029CFCA /* TSUIImageVIew+WeChat.swift in Sources */,
+				2A23E88D1E977E310029CFCA /* TSChatModel.swift in Sources */,
+				2A23E8831E977E310029CFCA /* TSChatVoiceIndicatorView.swift in Sources */,
+				2A23E8671E977E310029CFCA /* TSChatEmojiDictionary.swift in Sources */,
+				2A23E88E1E977E310029CFCA /* TSChatSubModel.swift in Sources */,
+				2A23E8921E977E310029CFCA /* TSModelTransformer.swift in Sources */,
+				2A23E8911E977E310029CFCA /* TSModel.swift in Sources */,
+				2A23E8AA1E977E310029CFCA /* TSImagePicker.swift in Sources */,
+				2A23E8891E977E310029CFCA /* HttpManager+UploadAudio.swift in Sources */,
+				2A23E8661E977E310029CFCA /* TSChatDataManager.swift in Sources */,
+				2A23E87E1E977E310029CFCA /* TSChatShareMoreCollectionViewCell.swift in Sources */,
+				2A23E8BB1E977E310029CFCA /* TSConfig.swift in Sources */,
+				2A23E8951E977E310029CFCA /* TSLocationManager.swift in Sources */,
+				2A23E8621E977E310029CFCA /* AudioPlayManager.swift in Sources */,
+				2A23E85C1E977E310029CFCA /* TSChatTimeCell.swift in Sources */,
+				2A23E8D31E977E310029CFCA /* Notes.swift in Sources */,
+				2A23E88C1E977E310029CFCA /* TSResponseSerializer.swift in Sources */,
+				2A23E8991E977E310029CFCA /* TSImageTextTableViewCell.swift in Sources */,
+				2A23E8791E977E310029CFCA /* TSChatEmotionCell.swift in Sources */,
+				2A23E8851E977E310029CFCA /* TSContactsViewController.swift in Sources */,
+				2A23E89B1E977E310029CFCA /* TSMeAvatarTableViewCell.swift in Sources */,
+				2A23E8A61E977E310029CFCA /* TSTabbarViewController.swift in Sources */,
+				2A23E8B81E977E310029CFCA /* UIView+Frame.swift in Sources */,
+				2A23E8AE1E977E310029CFCA /* TSUIColor+WeChat.swift in Sources */,
+				2A23E8A11E977E310029CFCA /* TSMessageViewController.swift in Sources */,
+				2A23E88B1E977E310029CFCA /* HttpManager.swift in Sources */,
+				2A23E8611E977E310029CFCA /* AudioFilesManager.swift in Sources */,
+				2A23E87B1E977E310029CFCA /* TSChatEmotionInputView.swift in Sources */,
+				2A23E8AD1E977E310029CFCA /* TSProgressHUD.swift in Sources */,
+				2A23E8B21E977E310029CFCA /* NSDate+Extension.swift in Sources */,
+				2A23E85E1E977E310029CFCA /* TSChatVoiceCell.swift in Sources */,
+				2A23E89D1E977E310029CFCA /* TSMeViewController.swift in Sources */,
+				2A23E8931E977E310029CFCA /* TSUploadModel.swift in Sources */,
+				2A23E8941E977E310029CFCA /* TSApplicationManager.swift in Sources */,
+				2A23E88A1E977E310029CFCA /* HttpManager+UploadImage.swift in Sources */,
+				2A23E8871E977E310029CFCA /* TSContactTableViewCell.swift in Sources */,
+				2A23E8A81E977E310029CFCA /* TSFullyHorizontalFlowLayout.swift in Sources */,
+				2A23E8541E977E310029CFCA /* TSChatBaseCell.swift in Sources */,
+				2A23E8681E977E310029CFCA /* TSChatTextParser.swift in Sources */,
+				2A23E8691E977E310029CFCA /* TSYYTextLinePositionModifier.swift in Sources */,
+				2A23E8B91E977E310029CFCA /* UIViewController+Extension.swift in Sources */,
+				2A23E8771E977E310029CFCA /* TSChatButton+UI.swift in Sources */,
+				2A23E8A71E977E310029CFCA /* TSWebViewController.swift in Sources */,
+				2A23E8AB1E977E310029CFCA /* TSLogger.swift in Sources */,
+				2A23E8731E977E310029CFCA /* TSChatViewController.swift in Sources */,
+				2A23E8B71E977E310029CFCA /* UISearchBar+Extension.swift in Sources */,
+				2A23E8B41E977E310029CFCA /* NSObject+String.swift in Sources */,
+				2A23E8581E977E310029CFCA /* TSChatSystemCell.swift in Sources */,
+				2A23E8B51E977E310029CFCA /* PHAsset+Extension.swift in Sources */,
+				2A23E8801E977E310029CFCA /* TSChatShareMoreView.swift in Sources */,
+				2A23E8701E977E310029CFCA /* TSChatViewController+Keyboard.swift in Sources */,
+				2A23E89F1E977E310029CFCA /* TSMessageTableViewCell.swift in Sources */,
+				2A23E8651E977E310029CFCA /* ImageFilesManager.swift in Sources */,
+				2A23E8711E977E310029CFCA /* TSChatViewController+Subviews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2A23E7AA1E977D110029CFCA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A23E7AB1E977D110029CFCA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2A23E7AF1E977D110029CFCA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A23E7B01E977D110029CFCA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2A23E7B31E977D110029CFCA /* Debug */ = {
@@ -259,26 +997,34 @@
 		};
 		2A23E7B61E977D110029CFCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D24F103BE3BFA85D552A7BB /* Pods-YJWeChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 84L896H9X2;
-				INFOPLIST_FILE = YJWeChat/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/YJWeChat/Supportting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lee.YJWeChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.wechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/YJWeChat/Supportting Files/YJWeChat-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		2A23E7B71E977D110029CFCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B04BC44769819790F67286F6 /* Pods-YJWeChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 84L896H9X2;
-				INFOPLIST_FILE = YJWeChat/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/YJWeChat/Supportting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lee.YJWeChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.wechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/YJWeChat/Supportting Files/YJWeChat-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +1048,7 @@
 				2A23E7B71E977D110029CFCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
