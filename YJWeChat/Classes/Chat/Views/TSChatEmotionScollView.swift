@@ -9,67 +9,65 @@
 import Foundation
 
 class TSChatEmotionScollView: UICollectionView {
-    fileprivate var touchBeganTime: TimeInterval = 0
-    fileprivate var touchMoved: Bool = false
-    fileprivate var magnifierImageView: UIImageView!
-    fileprivate var magnifierContentImageView: UIImageView!
-    fileprivate var backspaceTimer: Timer!
-    fileprivate weak var currentMagnifierCell: TSChatEmotionCell?
+  fileprivate var touchBeganTime: TimeInterval = 0
+  fileprivate var touchMoved: Bool = false
+  fileprivate var magnifierImageView: UIImageView!
+  fileprivate var magnifierContentImageView: UIImageView!
+  fileprivate var backspaceTimer: Timer!
+  fileprivate weak var currentMagnifierCell: TSChatEmotionCell?
     
-    var emotionScrollDelegate: ChatEmotionScollViewDelegate?
+  var emotionScrollDelegate: ChatEmotionScollViewDelegate?
+  
+  required init(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)!
+    self.initialize()
+  }
     
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)!
-        self.initialize()
+  func initialize() {
+    self.magnifierImageView = UIImageView(image: TSAsset.Emoticon_keyboard_magnifier.image)
+    self.magnifierContentImageView = UIImageView()
+    self.magnifierContentImageView.size = CGSize(width: 40, height: 40)
+    self.magnifierContentImageView.centerX = self.magnifierImageView.width / 2
+    self.magnifierImageView.addSubview(self.magnifierContentImageView)
+    self.magnifierImageView.isHidden = true
+    self.addSubview(self.magnifierImageView)
+  }
+  
+  // MARK: - life cycle
+  override func awakeFromNib() {
+    self.clipsToBounds = false
+    self.showsHorizontalScrollIndicator = false
+    self.isUserInteractionEnabled = true
+    self.canCancelContentTouches = false
+    self.isMultipleTouchEnabled = false
+    self.scrollsToTop = false
+  }
+    
+  deinit {
+    self.endBackspaceTimer()
+  }
+  
+  // MARK: - private
+  // 按住删除不动，触发 timer
+  func startBackspaceTimer() {
+    self.endBackspaceTimer()
+    self.backspaceTimer = Timer.ts_every(0.1, {[weak self] in
+      if self!.currentMagnifierCell!.isDelete {
+        UIDevice.current.playInputClick()
+        self!.emotionScrollDelegate?.emoticonScrollViewDidTapCell(self!.currentMagnifierCell!)
+      }
+    })
+    RunLoop.main.add(self.backspaceTimer, forMode: RunLoopMode.commonModes)
+  }
+  
+  // 停止 timmer
+  func endBackspaceTimer() {
+    NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(TSChatEmotionScollView.startBackspaceTimer), object: nil)
+    if self.backspaceTimer != nil {
+      self.backspaceTimer.invalidate()
+      self.backspaceTimer = nil
     }
-    
-    func initialize() {
-        self.magnifierImageView = UIImageView(image: TSAsset.Emoticon_keyboard_magnifier.image)
-        self.magnifierContentImageView = UIImageView()
-        self.magnifierContentImageView.size = CGSize(width: 40, height: 40)
-        self.magnifierContentImageView.centerX = self.magnifierImageView.width / 2
-        self.magnifierImageView.addSubview(self.magnifierContentImageView)
-        self.magnifierImageView.isHidden = true
-        self.addSubview(self.magnifierImageView)
-    }
-    
-    override func awakeFromNib() {
-        self.clipsToBounds = false
-        self.showsHorizontalScrollIndicator = false
-        self.isUserInteractionEnabled = true
-        self.canCancelContentTouches = false
-        self.isMultipleTouchEnabled = false
-        self.scrollsToTop = false
-    }
-    
-    deinit {
-        self.endBackspaceTimer()
-    }
-    
-    /**
-     按住删除不动，触发 timer
-     */
-    func startBackspaceTimer() {
-        self.endBackspaceTimer()
-        self.backspaceTimer = Timer.ts_every(0.1, {[weak self] in
-            if self!.currentMagnifierCell!.isDelete {
-                UIDevice.current.playInputClick()
-                self!.emotionScrollDelegate?.emoticonScrollViewDidTapCell(self!.currentMagnifierCell!)
-            }
-        })
-        RunLoop.main.add(self.backspaceTimer, forMode: RunLoopMode.commonModes)
-    }
-    
-    /**
-     停止 timmer
-     */
-    func endBackspaceTimer() {
-        NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(TSChatEmotionScollView.startBackspaceTimer), object: nil)
-        if self.backspaceTimer != nil {
-            self.backspaceTimer.invalidate()
-            self.backspaceTimer = nil
-        }
-    }
+  }
     
     /**
      根据 touch point 获取 Cell
@@ -78,7 +76,7 @@ class TSChatEmotionScollView: UICollectionView {
      
      - returns: 表情 Cell
      */
-    func cellForTouches(_ touches: Set<UITouch>) -> TSChatEmotionCell? {
+    fileprivate func cellForTouches(_ touches: Set<UITouch>) -> TSChatEmotionCell? {
       let touch =  touches.first as UITouch!
       let point = touch?.location(in: self)
       let indexPath = self.indexPathForItem(at: point!)
@@ -88,10 +86,8 @@ class TSChatEmotionScollView: UICollectionView {
       let cell: TSChatEmotionCell = self.cellForItem(at: newIndexPath) as! TSChatEmotionCell
       return cell
     }
-    
-    /**
-     隐藏放大镜
-     */
+  
+     // 隐藏放大镜
     func hideMagnifierView() {
       self.magnifierImageView.isHidden = true
     }
@@ -130,6 +126,7 @@ class TSChatEmotionScollView: UICollectionView {
   }
 }
 
+// MARK: - UIGestureRecognizer
 extension TSChatEmotionScollView {
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.touchMoved = false

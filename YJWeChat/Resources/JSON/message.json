@@ -7,7 +7,7 @@
            "userid": "3277",
            "meesage_from_type": "2",
            "avatar_url": "icon01",
-           "nickname": "MMmmMM",
+           "nickname": "黄小鸡",
            "last_message": {
            "message_id": "wx1234skjksmsjdfwe234iphone1446696401194",
            "receive_userid": "3277",
@@ -16,7 +16,7 @@
            "timestamp": 1456154320227,
            "message_content_type": "0",
            "client_message_id": "wx1234skjksmsjdfwe234iphone1446696401194",
-           "message": "[悠闲][悠闲][悠闲]这是一个高仿微信的项目 ，github地址是: https://github.com/KimLee2015/WeChat ，Written by Swift 3.0",
+           "message": "[悠闲][悠闲][悠闲]这是一个高仿微信的项目 ，github地址是: https://github.com/KimLee2015/WeChat ，使用Swift 3.0开发",
            "device": "iphone"
            }
         },
@@ -25,7 +25,7 @@
         "userid": "1011",
         "meesage_from_type": "2",
         "avatar_url": "icon02",
-        "nickname": "包租婆",
+        "nickname": "利耀坚",
         "last_message": {
           "message_id": "735pc1456111059588",
           "receive_userid": "1011",
@@ -34,7 +34,7 @@
           "timestamp": 1456111050243,
           "message_content_type": "0",
           "client_message_id": "735pc1456111059588",
-          "message": "啥时候交房租？",
+          "message": "我叫利耀坚，这是我模仿微信的一个项目",
           "device": "mac"
         }
       },
@@ -43,7 +43,7 @@
         "userid": "719",
         "meesage_from_type": "1",
         "avatar_url": "icon03",
-        "nickname": "我了个擦",
+        "nickname": "KimLee",
         "last_message": {
           "message_id": "wx1234skjksmsjdfwe234iphone1454407342317",
           "receive_userid": "719",
@@ -52,7 +52,7 @@
           "timestamp": 1454407342344,
           "message_content_type": "0",
           "client_message_id": "wx1234skjksmsjdfwe234iphone1454407342317",
-          "message": "听说最近上映了《功夫熊猫3》？",
+          "message": "听说最近上映了速度与激情8？",
           "device": "iphone"
         }
       },
@@ -61,7 +61,7 @@
         "userid": "3089",
         "meesage_from_type": "1",
         "avatar_url": "icon04",
-        "nickname": "栾地舒",
+        "nickname": "坚佬",
         "last_message": {
           "message_id": "wx1234skjksmsjdfwe234iphone1454403959249",
           "receive_userid": "3089",
@@ -79,7 +79,7 @@
         "userid": "900003",
         "meesage_from_type": 3,
         "avatar_url": "icon05",
-        "nickname": "微信助手",
+        "nickname": "利强",
         "last_message": {
           "message_content_type": "0",
           "timestamp": 1454395802000,
@@ -97,7 +97,7 @@
         "userid": "2077",
         "meesage_from_type": "2",
         "avatar_url": "icon06",
-        "nickname": "ALvslee",
+        "nickname": "徐燕芬",
         "last_message": {
           "message_id": "3829android1454063104269",
           "receive_userid": "2077",
@@ -115,7 +115,7 @@
         "userid": "2179",
         "meesage_from_type": "2",
         "avatar_url": "icon07",
-        "nickname": "杜先生",
+        "nickname": "徐智丹",
         "last_message": {
           "message_id": "wx1234skjksmsjdfwe234iphone1453195614287",
           "receive_userid": "2179",
@@ -133,7 +133,7 @@
         "userid": "2299",
         "meesage_from_type": "2",
         "avatar_url": "icon08",
-        "nickname": "搞基组",
+        "nickname": "同城基友网",
         "last_message": {
           "message_id": "pc14527586068924",
           "receive_userid": "2299",
@@ -151,7 +151,7 @@
         "userid": "2279",
         "meesage_from_type": "2",
         "avatar_url": "icon09",
-        "nickname": "吐槽",
+        "nickname": "发烂渣",
         "last_message": {
           "message_id": "3089iphone1452741634531",
           "receive_userid": "2279",
