@@ -1,7 +1,7 @@
 # YJWeChat简介
 该项目是业余时间，模仿微信的项目，全部使用Swift3进行开发
 
-# 效果图
+# 效果图.gif
 ![](images/preview1.gif)
 
 ![](images/preview2.gif)
