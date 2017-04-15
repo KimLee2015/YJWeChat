@@ -53,19 +53,19 @@ enum ContactModelEnum: Int {
         switch (self) {
         case .groupChat:
             model.chineseName = "群聊"
-            model.avatarSmallURL = "http://ww1.sinaimg.cn/large/6a011e49jw1f18hercci7j2030030glf.jpg"
+            model.avatarSmallURL = "group1"
             return model
         case .publicAccout:
             model.chineseName = "公众号"
-            model.avatarSmallURL = "http://ww2.sinaimg.cn/large/6a011e49jw1f18hkv6i5kj20300303yb.jpg"
+            model.avatarSmallURL = "group2"
             return model
         case .newFriends:
             model.chineseName = "新的朋友"
-            model.avatarSmallURL = "http://ww4.sinaimg.cn/large/6a011e49jw1f18hftp0foj2030030dfn.jpg"
+            model.avatarSmallURL = "group3"
             return model
         case .tags:
             model.chineseName = "标签"
-            model.avatarSmallURL = "http://ww2.sinaimg.cn/large/6a011e49jw1f18hh48jr3j2030030743.jpg"
+            model.avatarSmallURL = "group4"
             return model
         }
     }

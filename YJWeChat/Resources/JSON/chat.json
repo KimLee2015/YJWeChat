@@ -49,10 +49,10 @@
       "message_id": "wx1234skjksmsjdfwe234iPhone1453358045",
       "chat_receive_id": "wx43922sdkfjsfmmxdfmx",
       "audioInfo": {
-        "key_hash": "4bdc6752ffdb76d307567968963fdf02",
+        "key_hash": "",
         "channels": "1",
         "file_size": "11264",
-        "duration": "7",
+        "duration": "1",
         "audio_url": "camera",
         "audio_id": "1485",
         "format_name": "amr/amr",
@@ -71,10 +71,10 @@
       "message_id": "wx43922sdkfjsfmmxdfmxiPhone1453372358",
       "chat_receive_id": "wx1234skjksmsjdfwe234",
       "audioInfo": {
-        "key_hash": "0b835eaaf57e12f553a28fcbc3d6790e",
+        "key_hash": "",
         "channels": "1",
         "file_size": "28672",
-        "duration": "17",
+        "duration": "1",
         "audio_url": "close",
         "audio_id": "xxxxxxxxxx",
         "format_name": "amr/amr",
@@ -109,11 +109,11 @@
       "timestamp": "1453459821874",
       "message_type": "1",
       "picInfo": {
-        "thumb_url": "http://ww4.sinaimg.cn/mw690/ac593e95jw1f1d7adxl27j20dw09dmy8.jpg",
-        "width": "500",
-        "original_url": "http://ww4.sinaimg.cn/mw690/ac593e95jw1f1d7adxl27j20dw09dmy8.jpg",
+        "thumb_url": "chatImage1",
+        "width": "440",
+        "original_url": "chatImage1",
         "image_id": "1825764285",
-        "height": "337"
+        "height": "660"
       },
       "message": "",
       "device": "iPhone"
@@ -156,11 +156,11 @@
       "chat_send_id": "wx1234skjksmsjdfwe234",
       "timestamp": "1453461900243",
       "picInfo": {
-        "thumb_url": "http://ww4.sinaimg.cn/mw690/6a011e49gw1f1ij5gzj4tj20c80c43zk.jpg",
+        "thumb_url": "chatImage1",
         "width": "440",
-        "original_url": "http://ww3.sinaimg.cn/large/6a011e49gw1f1ij5gzj4tj20c80c43zk.jpg",
+        "original_url": "chatImage1",
         "image_id": "1825764285",
-        "height": "436"
+        "height": "660"
       },
       "type": "1",
       "message_id": "wx1234skjksmsjdfwe234iPhone1453461900188",
@@ -172,10 +172,10 @@
       "message_id": "wx43922sdkfjsfmmxdfmxiPhone1454050179",
       "chat_receive_id": "wx1234skjksmsjdfwe234",
       "audioInfo": {
-        "key_hash": "4bdc6752ffdb76d307567968963fdf02",
+        "key_hash": "",
         "channels": "1",
         "file_size": "3078",
-        "duration": "7",
+        "duration": "1",
         "audio_url": "beep",
         "audio_id": "xxxxxxxxx",
         "format_name": "amr/amr",
@@ -194,10 +194,10 @@
       "message_id": "wx43922sdkfjsfmmxdfmxiPhone1454050185",
       "chat_receive_id": "wx1234skjksmsjdfwe234",
       "audioInfo": {
-        "key_hash": "ac8ee63ae1e7d7185bcc99d11145eebb",
+        "key_hash": "",
         "channels": "1",
         "file_size": "30720",
-        "duration": "30",
+        "duration": "2",
         "audio_url": "shake_match",
         "audio_id": "1491",
         "format_name": "amr/amr",
@@ -221,11 +221,11 @@
       "timestamp": "1454050196116",
       "message_type": "1",
       "picInfo": {
-        "thumb_url": "http://ww3.sinaimg.cn/bmiddle/692a6bbcgw1exp81myss3j20g40o6tah.jpg",
+        "thumb_url": "chatImage2",
         "width": "440",
-        "original_url": "http://ww3.sinaimg.cn/bmiddle/692a6bbcgw1exp81myss3j20g40o6tah.jpg",
+        "original_url": "chatImage2",
         "image_id": "1825764285",
-        "height": "660"
+        "height": "436"
       },
       "message": "",
       "device": "iPhone"

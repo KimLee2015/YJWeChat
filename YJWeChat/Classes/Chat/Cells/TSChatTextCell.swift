@@ -29,7 +29,6 @@ class TSChatTextCell: TSChatBaseCell {
   @IBOutlet weak var contentLabel: YYLabel! {
     didSet{
       contentLabel.font = kChatTextFont
-  //        contentLabel.debugOption = self.debugYYLabel()
       contentLabel.numberOfLines = 0
       contentLabel.backgroundColor = UIColor.clear
       contentLabel.textVerticalAlignment = YYTextVerticalAlignment.top

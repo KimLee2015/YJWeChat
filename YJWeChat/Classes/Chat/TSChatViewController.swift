@@ -14,8 +14,8 @@ import Photos
 import SwiftyJSON
 
 /*
-*   聊天详情的 ViewController
-*/
+ *   聊天详情的 ViewController
+ */
 private let kChatLoadMoreOffset: CGFloat = 30
 
 final class TSChatViewController: UIViewController {
@@ -46,14 +46,14 @@ final class TSChatViewController: UIViewController {
   var isReloading: Bool = false               //UITableView 是否正在加载数据, 如果是，把当前发送的消息缓存起来后再进行发送
   var currentVoiceCell: TSChatVoiceCell!     //现在正在播放的声音的 cell
   var isEndRefreshing: Bool = true            // 是否结束了下拉加载更多
-
-// MARK: - life cycle
+  
+  // MARK: - life cycle
   override func viewDidLoad() {
     super.viewDidLoad()
     self.title = self.messageModel!.nickname!
     self.view.backgroundColor = UIColor.viewBackgroundColor
     self.navigationController!.interactivePopGestureRecognizer!.isEnabled = true
-
+    
     //TableView init
     self.listTableView.ts_registerCellNib(TSChatTextCell.self)
     self.listTableView.ts_registerCellNib(TSChatImageCell.self)
@@ -79,12 +79,12 @@ final class TSChatViewController: UIViewController {
   
   override func viewDidAppear(_ animated: Bool) {
     AudioRecordInstance.checkPermissionAndSetupRecord()
-      self.checkCameraPermission()
+    self.checkCameraPermission()
   }
   
   override func viewWillDisappear(_ animated: Bool) {
     NotificationCenter.default.removeObserver(self)
-      AudioPlayInstance.stopPlayer()
+    AudioPlayInstance.stopPlayer()
   }
   
   deinit {

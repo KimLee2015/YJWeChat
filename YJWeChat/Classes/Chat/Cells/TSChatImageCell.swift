@@ -131,10 +131,10 @@ class TSChatImageCell: TSChatBaseCell {
   // MARK: - getters and setters
   override func setCellContent(_ model: ChatModel) {
     super.setCellContent(model)
-    if let localThumbnailImage = model.imageModel!.localThumbnailImage {
+    if let localThumbnailImage = model.imageModel!.localThumbnailImage { // 上传
       self.chatImageView.image = localThumbnailImage
-    } else {
-     self.chatImageView.ts_setImageWithURLString(model.imageModel!.thumbURL)
+    } else { // 本来的
+      self.chatImageView.image = UIImage.init(imageLiteralResourceName: model.imageModel!.originalURL!)
     }
     self.setNeedsLayout()
   }

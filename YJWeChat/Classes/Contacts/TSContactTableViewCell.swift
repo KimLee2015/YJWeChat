@@ -13,7 +13,7 @@ class TSContactTableViewCell: UITableViewCell {
   @IBOutlet weak var usernameLabel: UILabel!
 
   func setCellContnet(_ model: ContactModel) {
-    self.avatarImageView.ts_setImageWithURLString(model.avatarSmallURL, placeholderImage: TSAsset.Icon_avatar.image)
+    self.avatarImageView.image = UIImage.init(imageLiteralResourceName: model.avatarSmallURL!)
     self.usernameLabel.text = model.chineseName
   }
 }

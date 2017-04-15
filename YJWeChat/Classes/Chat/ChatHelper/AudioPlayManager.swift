@@ -49,8 +49,31 @@ class AudioPlayManager: NSObject {
           try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
       } catch _ {}
     }
-    let audioPath = Bundle.main.path(forResource: audioModel.audioURL!, ofType: "wav")
-    self.playSoundWithPath(audioPath!);
+    let hasKeyHash = audioModel.keyHash != nil && audioModel.keyHash?.length != 0;
+    let hasAudioURL = audioModel.audioURL != nil && audioModel.audioURL?.length != 0;
+    if !hasKeyHash && !hasAudioURL {
+      self.delegate?.audioPlayFailed()
+      return
+    }
+    if hasKeyHash {
+      let keyHash = audioModel.keyHash!
+      //已有 wav 文件，直接播放
+      let wavFilePath = AudioFilesManager.wavPathWithName(keyHash)
+      if FileManager.default.fileExists(atPath: wavFilePath.path) {
+        self.playSoundWithPath(wavFilePath.path)
+        return
+      }
+      //已有 amr 文件，转换，再进行播放
+      let amrFilePath = AudioFilesManager.amrPathWithName(keyHash)
+      if FileManager.default.fileExists(atPath: amrFilePath.path) {
+        self.convertAmrToWavAndPlaySound(audioModel)
+        return
+      }
+    }else {
+      let audioPath = Bundle.main.path(forResource: audioModel.audioURL!, ofType: "wav")
+      self.playSoundWithPath(audioPath!);
+    }
+
     
 //    // 这是原来的------------------
 //    //已有 wav 文件，直接播放
