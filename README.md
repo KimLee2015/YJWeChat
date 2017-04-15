@@ -6,7 +6,7 @@
 
 ![](images/preview2.gif)
 
-![](images/preview4.gif)
+![](images/preview3.gif)
 
 # 特色
 - 可以发送富文本，表情，图片还有声音。
