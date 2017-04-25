@@ -57,15 +57,13 @@ class AudioPlayManager: NSObject {
     }
     if hasKeyHash {
       let keyHash = audioModel.keyHash!
-      //已有 wav 文件，直接播放
       let wavFilePath = AudioFilesManager.wavPathWithName(keyHash)
-      if FileManager.default.fileExists(atPath: wavFilePath.path) {
+      if FileManager.default.fileExists(atPath: wavFilePath.path) { // 已有 wav 文件，直接播放
         self.playSoundWithPath(wavFilePath.path)
         return
       }
-      //已有 amr 文件，转换，再进行播放
       let amrFilePath = AudioFilesManager.amrPathWithName(keyHash)
-      if FileManager.default.fileExists(atPath: amrFilePath.path) {
+      if FileManager.default.fileExists(atPath: amrFilePath.path) { // 已有 amr 文件，转换，再进行播放
         self.convertAmrToWavAndPlaySound(audioModel)
         return
       }
@@ -73,24 +71,6 @@ class AudioPlayManager: NSObject {
       let audioPath = Bundle.main.path(forResource: audioModel.audioURL!, ofType: "wav")
       self.playSoundWithPath(audioPath!);
     }
-
-    
-//    // 这是原来的------------------
-//    //已有 wav 文件，直接播放
-//    let wavFilePath = AudioFilesManager.wavPathWithName(keyHash)
-//    if FileManager.default.fileExists(atPath: wavFilePath.path) {
-//      self.playSoundWithPath(wavFilePath.path)
-//      return
-//    }
-//    //已有 amr 文件，转换，再进行播放
-//    let amrFilePath = AudioFilesManager.amrPathWithName(keyHash)
-//    if FileManager.default.fileExists(atPath: amrFilePath.path) {
-//      self.convertAmrToWavAndPlaySound(audioModel)
-//      return
-//    }
-//    //都没有，就进行下载
-//    self.downloadAudio(audioModel)
-//    // 这是原来的-------------------
   }
   
   func stopPlayer() {

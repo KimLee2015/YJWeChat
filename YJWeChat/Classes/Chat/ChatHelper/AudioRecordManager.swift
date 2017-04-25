@@ -21,7 +21,6 @@ class AudioRecordManager: NSObject {
   var recorder: AVAudioRecorder!
   var operationQueue: OperationQueue!
   weak var delegate: RecordAudioDelegate?
-  
   fileprivate var startTime: CFTimeInterval! //录音开始时间
   fileprivate var endTimer: CFTimeInterval! //录音结束时间
   fileprivate var audioTimeInterval: NSNumber!
@@ -69,20 +68,20 @@ class AudioRecordManager: NSObject {
    监听耳机插入的动作
    */
   func checkHeadphones() {
-      // check NewDeviceAvailable and OldDeviceUnavailable for them being plugged in/unplugged
-      let currentRoute = AVAudioSession.sharedInstance().currentRoute
-      if currentRoute.outputs.count > 0 {
-          for description in currentRoute.outputs {
-              if description.portType == AVAudioSessionPortHeadphones {
-                  log.info("headphones are plugged in")
-                  break
-              } else {
-                  log.info("headphones are unplugged")
-              }
-          }
-      } else {
-          log.info("checking headphones requires a connection to a device")
+    // check NewDeviceAvailable and OldDeviceUnavailable for them being plugged in/unplugged
+    let currentRoute = AVAudioSession.sharedInstance().currentRoute
+    if currentRoute.outputs.count > 0 {
+      for description in currentRoute.outputs {
+        if description.portType == AVAudioSessionPortHeadphones {
+          log.info("headphones are plugged in")
+          break
+        } else {
+          log.info("headphones are unplugged")
+        }
       }
+    } else {
+      log.info("checking headphones requires a connection to a device")
+    }
   }
   
   /**

@@ -74,28 +74,28 @@ class TSChatEmotionInputView: UIView {
     self.emotionPageControl.numberOfPages = self.groupDataSouce.count
   }
     
-    @IBAction func sendTaped(_ sender: AnyObject) {
-      if let delegate = self.delegate {
-        delegate.chatEmoticonInputViewDidTapSend()
-      }
+  @IBAction func sendTaped(_ sender: AnyObject) {
+    if let delegate = self.delegate {
+      delegate.chatEmoticonInputViewDidTapSend()
     }
+  }
     
-    //transpose line/row
-    fileprivate func emoticonForIndexPath(_ indexPath: IndexPath) -> EmotionModel? {
-      let page = indexPath.section
-      var index = page * kOneGroupCount + indexPath.row
-      
-      let ip = index / kOneGroupCount  //重新计算的所在 page
-      let ii = index % kOneGroupCount  //重新计算的所在 index
-      let reIndex = (ii % 3) * Int(kNumberOfOneRow) + (ii / 3)  //最终在数据源里的 Index
-      
-      index = reIndex + ip * kOneGroupCount
-      if index < self.emotionsDataSouce.count {
-        return self.emotionsDataSouce[index]
-      } else {
-        return nil
-      }
+  //transpose line/row
+  fileprivate func emoticonForIndexPath(_ indexPath: IndexPath) -> EmotionModel? {
+    let page = indexPath.section
+    var index = page * kOneGroupCount + indexPath.row
+    
+    let ip = index / kOneGroupCount  //重新计算的所在 page
+    let ii = index % kOneGroupCount  //重新计算的所在 index
+    let reIndex = (ii % 3) * Int(kNumberOfOneRow) + (ii / 3)  //最终在数据源里的 Index
+    
+    index = reIndex + ip * kOneGroupCount
+    if index < self.emotionsDataSouce.count {
+      return self.emotionsDataSouce[index]
+    } else {
+      return nil
     }
+  }
 }
 
 extension TSChatEmotionInputView: UICollectionViewDelegate {

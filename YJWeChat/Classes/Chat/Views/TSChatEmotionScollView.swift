@@ -115,13 +115,13 @@ class TSChatEmotionScollView: UICollectionView {
     UIView.animate(withDuration: duration, delay: 0, options: .curveEaseIn, animations: {_ in
       self.magnifierContentImageView.top = 3
       }, completion: {finished in
-          UIView.animate(withDuration: duration, delay: 0, options: .curveEaseIn, animations: {_ in
-              self.magnifierContentImageView.top = 6
-              }, completion: {finished in
-                  UIView.animate(withDuration: duration, delay: 0, options: .curveEaseIn, animations: {_ in
-                      self.magnifierContentImageView.top = 5
-                      }, completion:nil)
-          })
+      UIView.animate(withDuration: duration, delay: 0, options: .curveEaseIn, animations: {_ in
+          self.magnifierContentImageView.top = 6
+          }, completion: {finished in
+            UIView.animate(withDuration: duration, delay: 0, options: .curveEaseIn, animations: {_ in
+              self.magnifierContentImageView.top = 5
+            }, completion:nil)
+      })
     })
   }
 }
@@ -163,17 +163,18 @@ extension TSChatEmotionScollView {
   }
 
   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-      guard let cell = self.cellForTouches(touches) else {
-        self.endBackspaceTimer()
-        return
-      }
-      let checkCell = !self.currentMagnifierCell!.isDelete && cell.emotionImageView.image != nil
-      let checkMove = !self.touchMoved && cell.isDelete
-      if checkCell || checkMove {
-          self.emotionScrollDelegate?.emoticonScrollViewDidTapCell(self.currentMagnifierCell!)
-      }
+    guard let cell = self.cellForTouches(touches) else {
       self.endBackspaceTimer()
       self.hideMagnifierView()
+      return
+    }
+    let checkCell = !self.currentMagnifierCell!.isDelete && cell.emotionImageView.image != nil
+    let checkMove = !self.touchMoved && cell.isDelete
+    if checkCell || checkMove {
+      self.emotionScrollDelegate?.emoticonScrollViewDidTapCell(self.currentMagnifierCell!)
+    }
+    self.endBackspaceTimer()
+    self.hideMagnifierView()
   }
 
   override func touchesCancelled(_ touches: Set<UITouch>?, with event: UIEvent?) {
@@ -187,12 +188,12 @@ extension TSChatEmotionScollView {
  */
 // MARK: - @delgate ChatEmotionScollViewDelegate
 protocol ChatEmotionScollViewDelegate {
-    /**
-     点击表情 Cell 或者 delete Cell
-     
-     - parameter cell: 表情 cell
-     */
-    func emoticonScrollViewDidTapCell(_ cell: TSChatEmotionCell)
+  /**
+   点击表情 Cell 或者 delete Cell
+   
+   - parameter cell: 表情 cell
+   */
+  func emoticonScrollViewDidTapCell(_ cell: TSChatEmotionCell)
 }
 
 
